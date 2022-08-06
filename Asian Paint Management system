@@ -1,0 +1,25 @@
+//Paint Shop Database Management Creation//
+//1]Paint shop Login Page Creation//
+import javax.swing.*;
+public class Piant1 extends javax.swing.JFrame {
+/**
+* Creates new form Piant1
+*/
+public Piant1() {
+initComponents();
+}
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+// TODO add your handling code here:
+String user = username.getText();
+String password1 = password.getText();
+if(user.trim().equals("admin") && (password1.trim().equals("12345")))
+{
+JOptionPane.showMessageDialog(null,"Valid User");
+setVisible(false);
+new Menu_creation().setVisible(true);
+}
+else
+{
+JOptionPane.showMessageDialog(null,"Invalid User");
+}
+}
